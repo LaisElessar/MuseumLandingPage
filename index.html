@@ -4,81 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Exposição de pinturas barrocas</title>
 </head>
 <body>
-    <div>
+    <div class=" bloco img-bloco" style="background-image: url(img/cabeçalho.svg);">
         <header>
-            <div>
-                <img src="img/museuLogo.svg" alt="logo Museu">
+            <div class="logo">
+                <a href="/">
+                    <img src="img/museuLogo.svg" alt="logo Museu">
+                </a>
             </div>
             <nav>
                 <ul>
-                    <li>Sobre</li>
-                    <li>Atrações</li>
-                    <li>Local</li>
-                    <li>Ingresso</li>
+                    <li>
+                        <a href="/">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="/">Atrações</a>
+                    </li>
+                    <li>
+                        <a href="/">Local</a>
+                    </li>
+                    <li>
+                        <a href="/">Ingresso</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <div>
-            <h1>Exposição de pinturas barrocas</h1>
+        <div class="h1">
+            <h1>Expedição de pinturas barrocas</h1>
         </div>
     </div>
-    <div>
-        <h2>Sobre</h2>
-        <h3>Expedição de pinturas barrocas</h3>
-        <h4>
-            A pintura barroca começou em 1600 em Roma, 
-            na Itália, e espalhou-se por toda a Europa. 
-            Posteriormente chega também ao continente 
-            americano, com a vinda dos colonizadores 
-            portugueses e espanhóis.
-        </h4>
-        <img src="img/moça.svg" alt="Pintura 'Moça com brinco de pérolas'">
-        <h4>
-            Ela é marcada pelo estilo religioso, dramático, 
-            com a clara demonstração do estado emocional e 
-            apelo aos sentidos.
-        </h4>
-        <h3>Venha conhecer as mais famosas pinturas barrocas!</h3>
-    </div>
-    <div>
-        <div>
-            <h2>Atrações</h2>
-            <img src="img/vermeer.svg" alt="pintura de Johannes Vermeer">
-        </div>
-        <div>
-            <h3>Johannes Vermeer</h3>
-            <p>
-                Pintor holandês mais famoso e importante do século 
-                XVII (um período que é conhecido por Idade de Ouro 
-                Holandesa, devido às espantosas conquistas culturais 
-                e artísticas do país nessa época). Os seus quadros 
-                são admirados pelas suas cores transparentes, 
-                composições inteligentes e brilhante com o uso da luz.
-            </p>
+    <div class="background">
+        <div class="img-bloco perola sobre bloco" style="background-image: url(img/moçadePerolas.svg);">
+            <div class="bloco1">
+                <h2>Sobre</h2>
+                <h3>Expedição de pinturas barrocas</h3>
+                <h4>
+                    A pintura barroca começou em 1600 em Roma, 
+                    na Itália, e espalhou-se por toda a Europa. 
+                    Posteriormente chega também ao continente 
+                    americano, com a vinda dos colonizadores 
+                    portugueses e espanhóis.
+                </h4>
+            </div>
+            <div class="bloco2">
+                <h4>
+                    Ela é marcada pelo estilo religioso, dramático, 
+                    com a clara demonstração do estado emocional e 
+                    apelo aos sentidos.
+                </h4>
+                <h3>Venha conhecer as mais famosas pinturas barrocas!</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-            <h2>Local</h2>
-            <h3>Museu de arte de São Paulo</h3>
-            <p>Endereço: Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200</p>
-            <p>Telefone : (011) 31495959</p>
-        </div>
-        <div id="map"> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.8851976561537!2d-46.65666828360895!3d-23.561420526130537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseu%20de%20Arte%20de%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1683417237780!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="background">
+        <div class="slide-show" >
+            <input type="radio" class="slide-controller" name="slide" checked />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <ul class="slides-list" >
+                <li class="slide" >
+                    <div class="bloco flex atracoes">
+                        <div class="artist bloco1">
+                            <h2 class="margem-baixa">Atrações</h2>
+                            <img src="img/vermeer.svg" alt="pintura de Johannes Vermeer">
+                        </div>
+                        <div class="sobre-artista bloco2">
+                            <h3>Johannes Vermeer</h3>
+                            <p>Pintor holandês mais famoso e importante do século XVII (um período que é conhecido por Idade de Ouro Holandesa, devido às espantosas conquistas culturais e artísticas do país nessa época). Os seus quadros são admirados pelas suas cores transparentes, composições inteligentes e brilhante com o uso da luz.</p>
+                            <p>O pintor foi intensamente preocupado com o comportamento da luz e outros efeitos ópticos, como recessões repentinas e mudanças de foco. Graças às pinturas polidas que vemos, muitas vezes pensamos nele como um perfeccionista, mas imagens químicas de estudos mais recentes nos deram um vislumbre de um artista impetuoso e até impaciente. Esses estudos indicam que às vezes, Vermeer começava com um esboço pintado e depois adicionava rapidamente uma subcamada ousada para traçar suas figurações. </p>
+                            <p>Sua pintura mais famosa, "Meisje met de parel" (Moça com brinco de pérolas]), faz parte da coleção do Mauritshuis de Haia. É muitas vezes referido como "a Mona Lisa do Norte" ou "a Mona Lisa holandesa".</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="slide" >
+                    <div class="bloco flex atracoes">
+                        <div class="artist bloco1">
+                            <h2 class="margem-baixa">Atrações</h2>
+                            <img src="img/Rembrandt.svg" alt="pintura de Johannes Vermeer">
+                        </div>
+                        <div class="sobre-artista bloco2">
+                            <h3>Rembrandt</h3>
+                            <p>Rembrandt Harmenszoon van Rijn foi um pintor e gravurista holandês. É geralmente considerado um dos maiores nomes da história da arte europeia e o mais importante da história holandesa. É considerado, por alguns, como o maior pintor de todos os tempos</p>
+                            <p>A obra mais importante do criador holandês foi uma encomenda feita em 1639 pela Corporação de Arcabuzeiros de Amsterdã a fim de decorar a sede da companhia. A tela foi entregue em 1642. A frente do qudro, com protagonismo, está o capitão Frans Banning Cocq e o seu tenente.Rembrandt foi dono de uma vasta obra que reúne mais de 300 pinturas, desenhos e gravuras. Cerca de 100 delas são autorretratos.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="slide" >
+                    <div class="bloco flex atracoes">
+                        <div class="artist bloco1">
+                            <h2 class="margem-baixa">Atrações</h2>
+                            <img src="img/Caravaggio.svg" alt="pintura de Johannes Vermeer">
+                        </div>
+                        <div class="sobre-artista bloco2">
+                            <h3>Caravaggio</h3>
+                            <p>Michelangelo Merisi, conhecido como Caravaggio, foi um dos mais notados pintores italianos, atuante em Roma, Nápoles, Malta e Sicília, entre 1593 e 1610. Seu trabalho exerceu influência importante no estilo barroco, estilo do qual foi o primeiro grande representante.</p>
+                            <p>Caravaggio tornou-se um mestre da luz na pintura. Suas obras refletiam seu próprio caráter não convencional, pois ele inventou sistemas complexos de iluminação cuja fonte estava sempre fora de vista.</p>
+                            <p>Dono de uma personalidade forte e um estilo extravagante, grande parte de sua obra chocou a sociedade. Sua pintura foi considerada revolucionária para a época, seja nas técnicas utilizadas, seja nas pessoas retratadas. A cabeça da Medusa. A imagem emocionante e perturbadora é, sem dúvida, a obra-prima de Caravaggio, estando bastante presente na cultura contemporânea. Uma primeira versão, menor, foi produzida em 1596 e hoje pertence a uma coleção privada.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <div>
-        <h2>Participe deste evento!</h2>
-        <div>
-            <a href="/">Comprar Ingresso</a>
+    <div class="background">
+        <div class="bloco flex local">
+            <div class="bloco1">
+                <h2 class="margem-baixa">Local</h2>
+                <h3>Museu de arte de São Paulo</h3>
+                <p>Endereço: Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200</p>
+                <p>Telefone : (011) 31495959</p>
+            </div>
+            <div id="map" class="bloco2"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.8851976561537!2d-46.65666828360895!3d-23.561420526130537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseu%20de%20Arte%20de%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1683417237780!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
-    <footer>
-        <p>@Laís Reis - 2023</p>
-    </footer>
+    <div class="bloco img-bloco ingresso" style="background-image: url(img/rodapé.svg);">
+       <div class="rodape-bloco">
+            <div>
+                <h2>Participe deste evento!</h2>
+                <a class="botao" href="/">Comprar Ingresso</a>
+            </div>
+            <div class="rodape">
+                <p>@Laís Reis - 2023</p>
+            </div>
+       </div>
+    </div>
 </body>
 </html>
