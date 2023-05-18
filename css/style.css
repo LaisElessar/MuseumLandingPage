@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
 *{
     margin: 0px;
     color: white;
-    font-family: 'Almarai', 'Inter';
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
     text-transform: uppercase; 
 }
 
@@ -126,6 +128,7 @@ nav{
     display: flex;
     justify-content: center;
     margin-top: 267px;
+    font-family: 'Almarai', sans-serif;
 }
 
 h1{
@@ -154,7 +157,8 @@ li > a{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding: 16px 25px;
-    text-decoration: none;  
+    text-decoration: none;
+    cursor: pointer; 
 }
 
 li:nth-child(2){
