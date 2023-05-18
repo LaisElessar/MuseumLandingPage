@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Exposição de pinturas barrocas</title>
 </head>
 <body>
@@ -16,18 +17,18 @@
                 </a>
             </div>
             <nav>
-                <ul>
-                    <li>
-                        <a href="/">Sobre</a>
+                <ul >
+                    <li >
+                        <a id="sobre-menu" class="itens-menu">Sobre</a>
                     </li>
                     <li>
-                        <a href="/">Atrações</a>
+                        <a id="atracoes-menu" class="itens-menu">Atrações</a>
                     </li>
                     <li>
-                        <a href="/">Local</a>
+                        <a id="local-menu" class="itens-menu">Local</a>
                     </li>
                     <li>
-                        <a href="/">Ingresso</a>
+                        <a id="ingresso-menu" class="itens-menu">Ingresso</a>
                     </li>
                 </ul>
             </nav>
@@ -36,7 +37,7 @@
             <h1>Expedição de pinturas barrocas</h1>
         </div>
     </div>
-    <div class="background">
+    <div id="sobre" class="background">
         <div class="img-bloco perola sobre bloco" style="background-image: url(img/moçadePerolas.svg);">
             <div class="bloco1">
                 <h2>Sobre</h2>
@@ -59,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div class="background">
+    <div id="atracoes" class="background">
         <div class="slide-show" >
             <input type="radio" class="slide-controller" name="slide" checked />
             <input type="radio" class="slide-controller" name="slide" />
@@ -109,7 +110,7 @@
             </ul>
         </div>
     </div>
-    <div class="background">
+    <div id="local" class="background">
         <div class="bloco flex local">
             <div class="bloco1">
                 <h2 class="margem-baixa">Local</h2>
@@ -122,7 +123,7 @@
             </div>
         </div>
     </div>
-    <div class="bloco img-bloco ingresso" style="background-image: url(img/rodapé.svg);">
+    <div id="ingresso" class="bloco img-bloco ingresso" style="background-image: url(img/rodapé.svg);">
        <div class="rodape-bloco">
             <div>
                 <h2>Participe deste evento!</h2>
@@ -133,5 +134,6 @@
             </div>
        </div>
     </div>
+    <script src="scripts/scrollAnimation.js"></script>
 </body>
 </html>
